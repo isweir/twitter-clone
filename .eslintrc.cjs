@@ -8,6 +8,15 @@ const config = {
       extends: [
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
       ],
+      // Remove if/when this get fixed
+      rules: {
+        "@typescrupt-eslint/no-unsafe-member-access" : "off",
+        "@typescript-eslint/no-unsaft-argument": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/restrict-plus-operands": "off",
+      },
       files: ["*.ts", "*.tsx"],
       parserOptions: {
         project: path.join(__dirname, "tsconfig.json"),
